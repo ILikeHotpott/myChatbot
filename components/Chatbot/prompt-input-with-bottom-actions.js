@@ -40,7 +40,7 @@ export default function PromptInputWithBottomActions({onSendMessage}) {
             onSendMessage(userMessage, "user");
             setPrompt(""); // 清空输入栏
 
-            const response = await axios.post("http://127.0.0.1:8000/chatbot/", userMessage, {
+            const response = await axios.post("http://127.0.0.1:8000/api/chatbot/", userMessage, {
                 headers: {
                     "Content-Type": "application/json",
                 },
