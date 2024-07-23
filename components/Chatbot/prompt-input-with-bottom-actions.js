@@ -60,9 +60,9 @@ export default function PromptInputWithBottomActions({onSendMessage}) {
             <ScrollShadow hideScrollBar className=" flex flex-nowrap gap-2" orientation="horizontal">
                 <div className="flex gap-2">
                     {ideas.map(({title, description}, index) => (
-                        <Button key={index} className="flex h-14 flex-col items-start gap-0" variant="flat">
-                            <p>{title}</p>
-                            <p className="text-default-500">{description}</p>
+                        <Button key={index} className=" flex h-14 flex-col items-start gap-0" variant="flat">
+                            <p className="-mb-[1px]" >{title}</p>
+                            <p className="text-default-500 -mb-0.5">{description}</p>
                         </Button>
                     ))}
                 </div>
